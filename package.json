@@ -1,6 +1,6 @@
 {
   "name": "aws-promisify",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.1-alpha",
   "description": "This module helps to promisify AWS SDK functions",
   "main": "lib/index.js",
   "module": "es/index.js",
