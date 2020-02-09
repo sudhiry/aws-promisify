@@ -17,9 +17,9 @@ describe('aws promisify', () => {
   describe('handle returned function', () => {
     it('returned function must return Promise', () => {
       const returnedpromise = wrappedFunction();
-      returnedpromise.then(() => {
-        chai.assert.isTrue(true);
-      });
+      chai.assert.isTrue(
+        returnedpromise.then && typeof returnedpromise.then === 'function',
+      );
     });
   });
 });
